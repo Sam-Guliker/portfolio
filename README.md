@@ -2,10 +2,10 @@
 `this` website will contain HCI, IA , Inclusive and Exclusive design.
 
 # Table of Content
-- [Getting started](#content)
-- [Features](#user-case-and-goals)
-- [Used technology](#card-sorting)
-- [External datasource](#design)
+- [Content](#content)
+- [User case and goals](#user-case-and-goals)
+- [Card sorting](#card-sorting)
+- [Design](#design)
 - [Checklist](#checklist)
 
 
@@ -27,48 +27,38 @@ I will use filter options which will be ambiguous and exact. For ambiguous I wil
 
 # User case and goals
 ## First user case
-_Usercase_: Larrissa is a 24 year old paralympic champion and accessibility professional. Her eye sight is not so strong, she can only see a few percent with her eyes.
+**Usercas**: Larrissa is a 24 year old paralympic champion and accessibility professional.  
+Her eye sight is not so strong, she can only see a few percent with her eyes.  
 She uses headlines to make sure she can find what she needs.
 
-_Goal_: I want to make sure this website is full accessibility proof.
+**Goal**: I want to make sure this website is full accessibility proof.
 
-_Pleasureable_: I tried to find out what pleasurable ment for her. She replied with that it needs to be functional. I'm not sure what to do with this, I'm going to try and make some word jokes inside my website and try to make it more _pleasurable_ `this` way.
+**Pleasureable**: I tried to find out what pleasurable ment for her.  
+She replied with that it needs to be functional. I'm not sure  what to do with this, I'm going to try and make some  word jokes inside my website and try to make it more pleasurable `this` way.
 
 ## Second user case
-_Usercase_: Senior developer at an internship.  
-I think its important to make sure who I am and what my passions are, and obviously my work.
+**Usercase**: Senior developer at an internship.  
+I think its important to make sure who I am and what my  passions are, and obviously my work.
 
-_Goals_ : To show the Senior developer who I am and what kind of passions I have.
+**Goals** : To show the Senior developer who I am and what kind of passions I have.
 
-_Pleasureable_: I want to make sure I have some nice animations that will be pleasing for the eyes
+**Pleasureable**: I want to make sure I have some nice animations that will be pleasing for the eyes
 
 # Card sorting
 With card sorting I make sure the structure is on :fire:
-| Start  | About  | Work |
-|---|---|---|
-| This is a test to look if this will be working  | I hope so it is quite important   | allright lets go tell me more  |
-|   |   |   |
-|   |   |   |
 
+**Home**:
+I want to make sure there is a small introduction about me.
 
-1. Clone the repo with `git clone https://github.com/Sam-Guliker/real-time-web-project` or download it from github
-2. Run `npm install` or `yarn` to install the dependencies
-3. Run `npm start` to start the server
-4. Go to [http://localhost:3000/](http://localhost:3000/)
+**About me** This will contain my passions and hobbies.
+**Work** This will contain my work and experimental frontend work.
 
-
-# Features
-The following is possible with this application:
-
-- Chat with other people in the chatroom
-- Use your voice instead of typing to communicate.
-
-# External data source
-Twitter API
-
-# Database system
+# Design
+My design still needs some fine-tuning
+I got my base setup.
+![design](design.png)
 
 # Checklist
-- [ ] researching graphQL
-
-# License
+- [ x ] Design
+- [ ] Filter
+- [ ] Small Details
