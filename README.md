@@ -51,9 +51,9 @@ With card sorting I make sure the structure is on :fire:
 **Home**:
 I want to make sure there is a small introduction about me.
 
-**About me** This will contain my passions and hobbies.
+**About me**: This will contain my passions and hobbies.
 
-**Work** This will contain my work and experimental frontend work.
+**Work**: This will contain my work and experimental frontend work.
 
 # Design
 My design still needs some fine-tuning
