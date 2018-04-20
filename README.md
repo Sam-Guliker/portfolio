@@ -27,8 +27,8 @@ I will use filter options which will be ambiguous and exact. For ambiguous I wil
 
 # User case and goals
 The usercases and goals will help me to make a good user experience for the user.
-## First user case
-**Usercas**: Larrissa is a 24 year old paralympic champion and accessibility professional.  
+## Larrissa
+**Usercase**: Larrissa is a 24 year old paralympic champion and accessibility professional.  
 Her eye sight is not so strong, she can only see a few percent with her eyes.  
 She uses headlines to make sure she can find what she needs.
 
@@ -37,7 +37,7 @@ She uses headlines to make sure she can find what she needs.
 **Pleasureable**: I tried to find out what pleasurable ment for her.  
 She replied with that it needs to be functional. I'm not sure  what to do with this, I'm going to try and make some  word jokes inside my website and try to make it more pleasurable `this` way.
 
-## Second user case
+## Senior Developer
 **Usercase**: Senior developer at an internship.  
 I think its important to make sure who I am and what my  passions are, and obviously my work.
 
@@ -52,6 +52,7 @@ With card sorting I make sure the structure is on :fire:
 I want to make sure there is a small introduction about me.
 
 **About me** This will contain my passions and hobbies.
+
 **Work** This will contain my work and experimental frontend work.
 
 # Design
