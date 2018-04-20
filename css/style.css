@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+section {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+article {
+  margin: auto;
+}
+#grid {
+  margin: auto;
+  max-width: 70em;
+  display: block;
+}
+
+#grid li {
+  width: 33%;
+  display: inline;
+}
+
+#grid li img {
+  width:100%;
+}
