@@ -254,7 +254,7 @@ label.reset {
   box-shadow: 20px 12px 53px 0 rgba(0,0,0,0.3);
 }
 
-.blue-filter{
+.blue-filter {
   -webkit-filter: brightness(2) hue-rotate(-68deg);
   filter: brightness(2) hue-rotate(-68deg);
 }
@@ -280,6 +280,11 @@ div button:focus {
   background: white;
   border: 2px solid black;
 }
+
+div button:hover {
+  transform: rotateY(10deg);
+}
+
 
 footer {
   padding-top: 250px;
