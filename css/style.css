@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: 0;
 }
 
 html {
@@ -134,6 +135,10 @@ article img {
   letter-spacing: 3vw;
   display: inline-block;
 }
+
+.filter h1::after {
+  content: "";
+}
 .headline::after{
   content:"";
 }
@@ -143,6 +148,7 @@ article img {
   margin-left: auto;
   position: absolute;
   width: 59em;
+  margin-top: 70px;
 }
 
 .filter label {
@@ -151,9 +157,9 @@ article img {
   line-height: 56px;
   letter-spacing: 2vw;
   border: 2px solid black;
-  padding: 0 70px;
+  padding: 0 33px;
+  padding-right: 5px;
   display: inline-block;
-  padding-right: 0;
   font-weight: bold;
   transition: all 0.4s ease-in-out;
 }
@@ -163,7 +169,14 @@ label:hover {
 }
 
 input[type=checkbox] {
+  position: absolute;
+  left:-9999999px;
   opacity: 0;
+}
+input[type=checkbox]:focus+label{
+  opacity: 1;
+  color: white;
+  background: black;
 }
 
 .filter label:nth-child(n+3) {
@@ -175,7 +188,7 @@ label.reset {
 }
 
 .portfolio-item {
-  padding-top: 100px;
+  padding-top: 175px;
 }
 
 .portfolio-img {
@@ -185,8 +198,101 @@ label.reset {
   height: 858px;
   width: 1152px;
   object-fit: cover;
+  box-shadow: 0 12px 50px 0 rgba(0,0,0,0.2);
 }
 .portfolio-item .headline {
   margin-top: 0;
   padding: 0;
+}
+.portfolio-item p{
+  font-family: 'Roboto', sans-serif;
+	color: #000000;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 35px;
+  padding-left: 400px;
+}
+
+.portfolio-item div {
+  position: relative;
+  width: 70vw;
+  margin-top: 36px;
+  padding-right: 10em;
+  margin-left: auto;
+  margin-right: 150px;
+}
+
+.portfolio-item h2{
+  position: absolute;
+	color: #FFFFFF;
+  font-family: "Roboto Mono";
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 39px;
+  background-color:black;
+  padding: 40px 60px;
+  letter-spacing: 1em;
+  left: -100px;
+  margin-top: 95px;
+  box-shadow: 20px 12px 53px 0 rgba(0,0,0,0.3);
+}
+
+.blue-filter{
+  -webkit-filter: brightness(2) hue-rotate(-68deg);
+  filter: brightness(2) hue-rotate(-68deg);
+}
+button {
+  color: white;
+  font-family: "Roboto Mono";
+  border: none;
+  text-transform: uppercase;
+  background: black;
+  letter-spacing: 2.4em;
+  padding: 2em;
+  display: table;
+  margin: auto;
+  padding-right: 0;
+  margin-top: -20px;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid transparent;
+}
+
+div button:focus {
+  display: block;
+  color: black;
+  background: white;
+  border: 2px solid black;
+}
+
+footer {
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
+footer button {
+  font-size: 30px;
+  margin-top: 2em;
+  display: inline;
+  margin-left: 2em;
+  padding: 1em;
+  letter-spacing: 1em;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid transparent;
+}
+
+footer button:focus {
+  color: black;
+  background: white;
+  border: 2px solid black;
+}
+footer button:first-of-type {
+  margin-left: 0;
+}
+
+footer h1 {
+  line-height:  202px;
+}
+
+footer h1::after {
+  content: "";
 }
