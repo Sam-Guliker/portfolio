@@ -173,7 +173,24 @@ input[type=checkbox] {
   left:-9999999px;
   opacity: 0;
 }
-input[type=checkbox]:focus+label{
+input[type=checkbox]:focus+label {
+  opacity: 1;
+  color: white;
+  background: black;
+}
+
+input[type=checkbox]:checked + label {
+  opacity: 1;
+  color: white;
+  background: black;
+}
+input[type=checkbox]:checked:focus + label{
+  color: black;
+  background-color: #fff;
+  border: 2px solid black;
+}
+
+input[type=checkbox]:notchecked + label {
   opacity: 1;
   color: white;
   background: black;
