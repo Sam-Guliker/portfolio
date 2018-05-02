@@ -4,6 +4,9 @@
   box-sizing: border-box;
   outline: 0;
 }
+*::before, *::after{
+  box-sizing: border-box;
+}
 
 html {
   font-family: 'Roboto Mono', monospace;
@@ -11,7 +14,7 @@ html {
 
 article {
   position: relative;
-  padding: 0 150px;
+  padding: 0 12vw;
 }
 
 h1 {
@@ -30,7 +33,7 @@ h1::after{
   height:0;
 }
 
-hr, h2{
+hr, .h2_info{
   display: inline-block;
 }
 
@@ -52,22 +55,33 @@ main div {
 
 main div p {
   padding: 50px 100px;
-  font-size: 1.75em;
-  line-height: 56px;
+  font-size: 2vw;
+  line-height: 1.35em;
   box-shadow: -20px 32px 124px 0 rgba(0,0,0,0.1);
   z-index: 1;
   background-color: #fff;
   margin-top: 2em;
 }
 
-h2 {
+.h2_info {
   font-weight: 100;
   padding-left: 100px;
   font-size: 4vw;
   text-transform: uppercase;
   padding-left: 15vw;
-  letter-spacing: 5vw;
+  letter-spacing: 3vw;
   margin-top: 55px;
+}
+h2 {
+    margin-top: 107px;
+    font-size: 60px;
+    line-height: 100px;
+    letter-spacing: 5.1vw;
+    margin-left: auto;
+    padding-right: 10vw;
+    margin-left: 1.6em;
+    text-transform: uppercase;
+    transition: 0.4s all ease-in-out;
 }
 
 hr {
@@ -148,7 +162,7 @@ article img {
   display: inline-block;
   margin-left: auto;
   position: absolute;
-  width: 59em;
+  width: 57vw;
   margin-top: 70px;
 }
 
@@ -243,22 +257,6 @@ label.reset {
   margin-right: 150px;
 }
 
-.portfolio-item h2{
-  position: absolute;
-	color: #FFFFFF;
-  font-family: "Roboto Mono";
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 39px;
-  background-color:black;
-  padding: 40px 60px;
-  letter-spacing: 1em;
-  left: -100px;
-  margin-top: 95px;
-  box-shadow: 20px 12px 53px 0 rgba(0,0,0,0.3);
-  transition: 0.4s all ease-in-out;
-  z-index: 3;
-}
 
 .blue-filter {
   -webkit-filter: brightness(2) hue-rotate(-68deg);
@@ -311,7 +309,6 @@ footer a {
 
 }
 
-
 footer a:focus,
 footer a:hover {
   color: black;
@@ -323,14 +320,35 @@ footer a:first-of-type {
   margin-left: 0;
 }
 
-footer h1 {
-  line-height:  202px;
-}
+footer h2 {
+    padding-top: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 8vw;
+    letter-spacing: 9vw;
+    transition: all 0.4s ease-in-out;
+    margin: 0;
+    padding: 0;
+    line-height: 1.45em;
 
-footer h1::after {
-  content: "";
 }
-
+h3 {
+    position: absolute;
+    color: #FFFFFF;
+    font-family: "Roboto Mono";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 39px;
+    background-color: black;
+    padding: 40px 60px;
+    letter-spacing: 1em;
+    left: -100px;
+    margin-top: 95px;
+    box-shadow: 20px 12px 53px 0 rgba(0,0,0,0.3);
+    transition: 0.4s all ease-in-out;
+    z-index: 3;
+    text-transform: uppercase;
+}
 .portfolio-item .layer-1 {
   transform: translateX(-40px)
 }
