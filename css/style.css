@@ -281,6 +281,7 @@ a {
   z-index: 4;
   position: relative;
 }
+
 a:hover,
 a:focus {
   color: black;
@@ -294,6 +295,7 @@ footer {
 a {
   text-decoration: none;
 }
+
 footer a {
   font-size: 30px;
   display: inline-block;
@@ -311,7 +313,6 @@ footer a {
 
 }
 
-
 footer a:focus,
 footer a:hover {
   color: black;
@@ -319,6 +320,7 @@ footer a:hover {
   border: 2px solid black;
   transform: perspective( 600px ) rotateY( 45deg );
 }
+
 footer a:first-of-type {
   margin-left: 0;
 }
@@ -332,13 +334,13 @@ footer h1::after {
 }
 
 .portfolio-item .layer-1 {
-  transform: translateX(-40px)
+  transform: translateX(-40px);
 }
 .portfolio-item .layer-2 {
-  transform: translateX(70px)
+  transform: translateX(70px);
 }
 .layer-3 {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 .layer-4 {
   transform: scale(1.1);
