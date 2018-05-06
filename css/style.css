@@ -7,6 +7,9 @@
 *::before, *::after{
   box-sizing: border-box;
 }
+ul {
+    list-style-type: none;
+}
 
 html {
   font-family: 'Roboto Mono', monospace;
@@ -35,6 +38,11 @@ h1::after{
 
 hr, .h2_info{
   display: inline-block;
+}
+
+main {
+    max-width: 2000px;
+    margin:auto;
 }
 
 main section {
@@ -102,7 +110,59 @@ hr {
   margin-left: auto;
   padding-right: 10vw;
   margin-left: 1.6em;
+}
 
+.other-projects {
+    font-size: 5vw;
+    letter-spacing: 5vw;
+    line-height: 9vh;
+}
+.other-projects::after{
+    content: initial;
+}
+
+.projects {
+    padding: 0 15.375em;
+}
+.projects li {
+    position: relative;
+    max-width: 20vw;
+    background:pink;
+}
+
+.projects li:nth-child(even){
+    margin-left: auto;
+}
+.projects li a {
+    display: block;
+    width: 11em;
+    margin: auto;
+    bottom: 3em;
+}
+.projects h3 {
+    position: absolute;
+    color: black;
+    font-family: "Roboto Mono";
+    font-size: 1.875em;
+    font-weight: bold;
+    line-height: 39px;
+    background-color: transparent;
+    /* letter-spacing: 1em; */
+    margin-top: 95px;
+    box-shadow: none;
+    transition: 0.4s all ease-in-out;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    left: initial;
+    right: -3em;
+    bottom: 7.625em;
+}
+.projects img {
+    width: 18.75em;
+    height: 18.75em;
+    object-fit: contain;
+    box-shadow: -5px 12px 50px 0 rgba(0,0,0,0.2);}
 }
 
 article img {
@@ -233,19 +293,23 @@ label.reset {
   box-shadow: 0 12px 50px 0 rgba(0,0,0,0.2);
   transition: 0.4s all ease-in-out;
 }
+.portfolio-item:nth-child(even) .portfolio-img{
+  right: 0;
+}
 .portfolio-item .headline {
   margin-top: 0;
   padding: 0;
 }
 .portfolio-item p{
   font-family: 'Roboto', sans-serif;
-	color: #000000;
+  color: #000000;
   font-size: 18px;
   font-weight: 100;
   line-height: 35px;
   padding-left: 400px;
   position: relative;
   transition: 0.4s all ease-in-out;
+  max-width: 800px;
 }
 
 .portfolio-item div {
