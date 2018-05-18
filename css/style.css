@@ -81,21 +81,17 @@ main div p {
 
 .h2_info {
   font-weight: 100;
-  padding-left: 100px;
   font-size: 4vw;
   text-transform: uppercase;
-  padding-left: 15vw;
   letter-spacing: 3vw;
   margin-top: 55px;
 }
 h2 {
-    margin-top: 107px;
     font-size: 60px;
     line-height: 100px;
     letter-spacing: 5.1vw;
     margin-left: auto;
-    padding-right: 10vw;
-    margin-left: 1.6em;
+    margin-left: 26vw;
     text-transform: uppercase;
     transition: 0.4s all ease-in-out;
 }
@@ -152,14 +148,12 @@ hr {
     bottom: 3em;
 }
 .projects h3 {
-    position: absolute;
     color: black;
     font-family: "Roboto Mono";
     font-size: 1.875em;
     font-weight: bold;
     line-height: 39px;
     background-color: transparent;
-    /* letter-spacing: 1em; */
     margin-top: 95px;
     box-shadow: none;
     transition: 0.4s all ease-in-out;
@@ -289,19 +283,18 @@ label.reset {
   border: none;
 }
 
+
 .portfolio-item {
-  padding-top: 175px;
-}
-.portfolio-item {
+    position: relative;
     padding-top: 225px;
 }
 
 .portfolio-img {
-  margin-top: 8em;
   position: absolute;
   z-index: -1;
-  height: 858px;
-  width: 1152px;
+  height: auto;
+  width: 80%;
+  top:350px;
   object-fit: cover;
   box-shadow: 0 12px 50px 0 rgba(0,0,0,0.2);
   transition: 0.4s all ease-in-out;
@@ -314,24 +307,22 @@ label.reset {
   padding: 0;
 }
 .portfolio-item p{
-  font-family: 'Roboto', sans-serif;
-  color: #000000;
-  font-size: 18px;
-  font-weight: 100;
-  line-height: 35px;
-  padding-left: 400px;
-  position: relative;
-  transition: 0.4s all ease-in-out;
-  max-width: 800px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    transition: 0.4s all ease-in-out;
+    padding-left: 32vw;
+    padding-bottom: 75px;
+    padding-top: 75px;
+    line-height: 1.7;
 }
 
 .portfolio-item div {
   position: relative;
-  width: 70vw;
+  width: 80vw;
   margin-top: 36px;
-  padding-right: 10em;
-  margin-left: auto;
-  margin-right: 150px;
 }
 
 
@@ -402,6 +393,9 @@ footer a:first-of-type {
 footer h1::after {
     content: initial;
 }
+footer h1 {
+    font-size: 7vw;
+}
 
 footer h2 {
     padding-top: 100px;
@@ -424,7 +418,7 @@ h3 {
     font-weight: bold;
     line-height: 39px;
     background-color: black;
-    padding: 40px 60px;
+    padding: 4vh 4vw;
     letter-spacing: 1em;
     left: -100px;
     margin-top: 95px;
@@ -464,37 +458,21 @@ h3 {
 
 
 @media (max-width: 1270px) {
-    .portfolio-item p{
-        padding-left:300px;
-    }
     h3 {
         font-size:1.4em;#
     }
 }
 
 @media (max-width: 1000px) {
-    h3 {
-        position: initial;
-        left: 0;
-        margin: 0;
-        margin-top: 2em;
+    .portfolio-item div{
+        padding-top: 100px;
     }
     main div {
         padding: initial;
         width: initial;
     }
     .portfolio-item {
-        padding-top: 0;
-    }
-    .portfolio-item div {
-        margin: 5em;
-        max-width: initial;
-        padding: 2em;
-        margin-top: 2em;
-    }
-    .portfolio-item p {
-        max-width: initial;
-        padding: 2em;
+        padding-top: 100px;
     }
     .projects {
         padding: initial;
@@ -507,11 +485,6 @@ h3 {
     }
     footer a:first-of-type {
         margin: 0;
-    }
-    .portfolio-item img {
-        width: 100%;
-        position: initial;
-        height: initial;
     }
     main article:first-of-type h1{
         font-size: 13vw;
@@ -531,9 +504,6 @@ h3 {
     main .about-me {
         padding-top: 2em;
     }
-    .portfolio-item h2 {
-        margin: 0;
-    }
     .portfolio-img {
         margin-top: 2em;
     }
@@ -546,7 +516,7 @@ h3 {
     }
     .projects li a {
         width: initial;
-        bottom: initial;
+        bottom: 80px;
         margin: initial;
         display: inline-block;
     }
@@ -557,8 +527,8 @@ h3 {
         margin-top: 0;
         padding: 0;
     }
-    ul, .projects {
-        margin: 0 2em;
+    ul {
+        padding-bottom:250px;
     }
     .projects {
         text-align: center;
@@ -568,7 +538,7 @@ h3 {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 769px) {
     .headline {
         font-size: 2em;
         line-height: 2em;
@@ -593,6 +563,9 @@ h3 {
     h3 {
         padding: 20px;
         font-size: 1em;
+        position: initial;
+        left: initial;
+        margin:20px 0;
     }
     a {
         font-size: 16px;
@@ -606,6 +579,23 @@ h3 {
     }
     footer a:first-of-type {
         margin-top: 20px;
+    }
+    ul {
+        margin: 0 2em;
+    }
+    .portfolio-img {
+        position: initial;
+        z-index: -1;
+        height: auto;
+        width: 100%;
+        top: initial;
+        object-fit: cover;
+        box-shadow: 0 12px 50px 0 rgba(0,0,0,0.2);
+        transition: 0.4s all ease-in-out;
+    }
+    .portfolio-item p {
+        padding: 2em;
+        margin: 0;
     }
 }
 
