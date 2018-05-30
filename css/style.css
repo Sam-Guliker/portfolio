@@ -164,7 +164,6 @@ hr {
     background-color: transparent;
     margin-top: 95px;
     box-shadow: none;
-    transition: 0.4s all ease-in-out;
     text-transform: uppercase;
     padding: 0;
     margin: 0;
@@ -174,9 +173,8 @@ hr {
 }
 .projects img {
     width: 100%;
-    box-shadow: -5px 12px 50px 0 rgba(0,0,0,0.2);}
+    box-shadow: -5px 12px 50px 0 rgba(0,0,0,0.2);
 }
-
 article img {
   margin-top: 144px;
   position: absolute;
@@ -462,12 +460,47 @@ h3 {
     .projects {
         padding: 5em 15.375em;
     }
+    .portfolio-img {
+        max-width:60%;
+    }
+    .portfolio-item div {
+        width: 39vw;
+        margin-right: 29.5em;
+    }
+    .portfolio-item:nth-child(even) div {
+        margin-right: 58em;
+      }
+    .about-me main div p {
+        margin-top: 3em;
+    }
+    .about-me div {
+        margin-top: 36px;
+        width: 25vw;
+        margin-right: 32em;
+        margin-left: auto;
+    }
+    .about-me img {
+        height: 30em;
+        top: 15em;
+        width: 30em;
+        left: 24vw;
+        top: 12vh;
+    }
+    .portfolio-item:first-of-type {
+        padding-top: 450px;
+    }
+    .coffee {
+        padding-top: 150px;
+    }
+    footer {
+        padding-bottom: 200px
+    }
 }
 
 
 @media (max-width: 1270px) {
     h3 {
-        font-size:1.4em;#
+        font-size:1.4em;
     }
 }
 
