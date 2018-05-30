@@ -467,7 +467,7 @@
       }
       .about-me div {
           margin-top: 36px;
-          margin-right: 14vw;
+          margin-right: 10vw;
           margin-left: auto;
       }
       .about-me img {
@@ -486,9 +486,6 @@
       footer {
           padding-bottom: 200px;
       }
-      .about-me div {
-          margin-right: 20vw;
-      }
   }
   
   @media (min-width: 2000px) {
@@ -498,6 +495,9 @@
       .portfolio-item div {
           width: 38vw;
           margin-right: 29.5em;
+      }
+      .about-me div {
+          padding-right: 15vw;
       }
   }
   
