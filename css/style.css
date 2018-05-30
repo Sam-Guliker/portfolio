@@ -493,11 +493,14 @@
           font-size:1.4em;
       }
       .portfolio-item div {
-          width: 38vw;
-          margin-right: 29.5em;
+        width: 33vw;
+        margin-right: 37em;
       }
       .about-me div {
           padding-right: 15vw;
+      }
+      .portfolio-item p {
+          padding-left: 14vw;
       }
   }
   
