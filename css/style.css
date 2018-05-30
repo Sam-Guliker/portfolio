@@ -1,651 +1,703 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  outline: 0;
-}
-*::before, *::after{
-  box-sizing: border-box;
-}
-ul {
-    list-style-type: none;
-}
-
-html {
-  font-family: 'Roboto Mono', monospace;
-}
-
-article {
-  position: relative;
-  padding: 0 12vw;
-}
-
-article:first-of-type {
-    padding: 0 15vw;
-}
-article:first-of-type h1{
-    line-height: 1.4;
-} 
-
-p {
-    font-size: 16px;
-}
-
-h1 {
-  padding-top: 100px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 8vw;
-  letter-spacing: 8vw;
-  transition: opacity 0.4s ease-in-out;
-}
-
-h1::after{
-  position: absolute;
-  content: "_";
-  background-color: black;
-  height:0;
-  opacity: 0;
-  animation: opacity-flik 1s infinite ease;
-}
-
-hr, .h2_info{
-  display: inline-block;
-}
-
-main section {
-  position: relative;
-}
-
-main .about-me {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.about-me img {
-    top: 17em;
-    position: absolute;
-    left: 6em;
-    z-index: -1;
-}
-main div {
-    margin-top: 36px;
-    width: 33vw;
-    margin-right: 20em;
-    margin-left: auto;
-}
-
-main div p {
-  padding: 50px 100px;
-  font-size: 2vw;
-  font-size: 16px;
-  line-height: 1.35em;
-  box-shadow: -20px 32px 124px 0 rgba(0,0,0,0.1);
-  z-index: 1;
-  background-color: #fff;
-  margin-top: 2em;
-}
-
-.h2_info {
-  font-weight: 100;
-  font-size: 4vw;
-  text-transform: uppercase;
-  letter-spacing: 3vw;
-  margin-top: 55px;
-}
-h2 {
-    font-size: 60px;
-    line-height: 100px;
-    letter-spacing: 5.1vw;
-    margin-left: auto;
-    margin-left: 19vw;
-    text-transform: uppercase;
-    transition: 0.4s all ease-in-out;
-}
-
-hr {
-  height: 3px;
-  border: none;
-  outline: none;
-  background: black;
-  width: 20%;
-  position: absolute;
-  top: 100px;
-}
-
-.headline {
-  margin-top: 107px;
-  font-size: 60px;
-  line-height: 100px;
-  letter-spacing: 5.1vw;
-  margin-left: auto;
-  padding-right: 10vw;
-  margin-left: 1.6em;
-}
-
-.other-projects {
-    margin-top: 2em;
-    font-size: 5vw;
-    letter-spacing: 5vw;
-    line-height: 9vh;
-}
-.other-projects::after{
-    content: initial;
-}
-
-.projects {
-    padding: 0 10.375em;
-    margin-top: 2em;
-}
-.projects li {
-    position: relative;
-    max-width: 44.5vw;
-}
-
-.projects li:nth-child(even){
-    margin-left: auto;
-}
-.projects li:last-child {
-    padding-left: 4em;
-}
-.projects li a {
-    display: block;
-    width: 11em;
-    margin: auto;
-    bottom: 3em;
-}
-.projects h3 {
-    color: black;
-    font-family: "Roboto Mono";
-    font-size: 1.875em;
-    font-weight: bold;
-    line-height: 39px;
-    background-color: transparent;
-    margin-top: 95px;
-    box-shadow: none;
-    text-transform: uppercase;
     padding: 0;
     margin: 0;
-    left: initial;
-    right: -3em;
-    bottom: 7.625em;
-}
-.projects img {
-    width: 100%;
-    box-shadow: -5px 12px 50px 0 rgba(0,0,0,0.2);
-}
-article img {
-  margin-top: 144px;
-  position: absolute;
-  height: 622px;
-  width: 612px;
-  background-color: #4A90E2;
-  box-shadow: -10px 2px 54px 0 rgba(0,0,0,0.2);
-  z-index: -1;
-}
-
-.code {
-  position: absolute;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-size: 120px;
-  letter-spacing: 70px;
-  right: 0;
-  top: 4em;
-  color: rgba(0,0,0, 10%);
-  text-transform: uppercase;
-  z-index: -3;
-}
-.adventure{
-  position: absolute;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-size: 120px;
-  letter-spacing: 70px;
-  left: 0;
-  top: 1.5em;
-  color: rgba(0,0,0, 10%);
-  text-transform: uppercase;
-  z-index: -3
-}
-
-.filter {
-  position: relative;
-  padding-top: 12vh;
-}
-
-.filter h1 {
-  font-size: 2vw;
-  letter-spacing: 3vw;
-  display: inline-block;
-}
-
-.filter h1::after {
-  content: "";
-}
-.headline::after{
-  content:"";
-}
-
-.filter form {
-  display: inline-block;
-  margin-left: auto;
-  position: absolute;
-  width: 57vw;
-  margin-top: 70px;
-}
-
-.filter label {
-  text-transform: uppercase;
-  font-size: 1em;
-  line-height: 56px;
-  letter-spacing: 2vw;
-  border: 2px solid black;
-  padding: 0 33px;
-  padding-right: 5px;
-  display: inline-block;
-  font-weight: bold;
-  transition: all 0.4s ease-in-out;
-}
-label:hover {
-  color: white;
-  background:black;
-}
-
-input[type=checkbox] {
-  position: absolute;
-  left:-9999999px;
-  opacity: 0;
-}
-input[type=checkbox]:focus+label {
-  opacity: 1;
-  color: white;
-  background: black;
-}
-
-input[type=checkbox]:checked + label {
-  opacity: 1;
-  color: white;
-  background: black;
-}
-input[type=checkbox]:checked:focus + label{
-  color: black;
-  background-color: #fff;
-  border: 2px solid black;
-}
-
-input[type=checkbox]:notchecked + label {
-  opacity: 1;
-  color: white;
-  background: black;
-}
-
-.filter label:nth-child(n+3) {
-  margin-top: 26px;
-}
-
-label.reset {
-  border: none;
-}
-
-.portfolio-item {
+    box-sizing: border-box;
+    outline: 0;
+  }
+  *::before, *::after{
+    box-sizing: border-box;
+  }
+  ul {
+      list-style-type: none;
+  }
+  
+  html {
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  article {
     position: relative;
-    padding-top: 350px;
-}
-.portfolio-item:first-of-type {
-    padding-top:250px;
-}
-
-.portfolio-img {
-  position: absolute;
-  z-index: -1;
-  height: auto;
-  width: 80%;
-  object-fit: cover;
-  box-shadow: 0 12px 50px 0 rgba(0,0,0,0.2);
-  transition: 0.4s all ease-in-out;
-}
-.portfolio-item:nth-child(even) .portfolio-img{
-  right: 0;
-}
-.portfolio-item .headline {
-  margin-top: 0;
-  padding: 0;
-}
-.portfolio-item p{
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
-    font-size: 18px;
-    font-weight: 100;
-    position: relative;
-    transition: 0.4s all ease-in-out;
-    padding-left: 23vw;
-    padding-bottom: 75px;
-    padding-top: 75px;
-    line-height: 1.7;
-}
-
-.portfolio-item div {
-  position: relative;
-  width: 56vw;
-  margin-top: 16em;
-}
-
-
-.blue-filter {
-  -webkit-filter: brightness(2) hue-rotate(-68deg);
-  filter: brightness(2) hue-rotate(-68deg);
-}
-a {
-  color: white;
-  font-family: "Roboto Mono";
-  border: none;
-  text-transform: uppercase;
-  background: black;
-  letter-spacing: 1.4em;
-  padding: 2em;
-  display: table;
-  margin: auto;
-  padding-right: 10px;
-  margin-top: -20px;
-  transition: background 0.2s ease-in-out;
-  border: 2px solid transparent;
-  z-index: 4;
-  position: relative;
-}
-
-a:hover,
-a:focus {
-  color: black;
-  background:white;
-  border: 2px solid black;
-}
-footer {
-  padding-bottom: 100px;
-}
-a {
-  text-decoration: none;
-}
-
-footer a {
-  font-size: 30px;
-  display: inline-block;
-  margin-left: 2em;
-  padding: 1em;
-  letter-spacing: 1em;
-  transition: all 0.4s ease-in-out;
-  border: 2px solid transparent;
-  color: inherit;
-  font-weight: bold;
-  margin-top: 2em;
-  text-transform: uppercase;
-  color: white;
-  background: black;
-
-}
-
-footer a:focus,
-footer a:hover {
-  color: black;
-  background: white;
-  border: 2px solid black;
-  transform: perspective( 600px ) rotateY( 45deg );
-}
-
-footer a:first-of-type {
-  margin-left: 0;
-}
-
-footer h1::after {
-    content: initial;
-}
-footer h1 {
-    font-size: 7vw;
-}
-
-footer h2 {
+    padding: 0 12vw;
+  }
+  
+  article:first-of-type {
+      padding: 0 15vw;
+  }
+  
+  article:first-of-type h1{
+      line-height: 1.4;
+  } 
+  
+  p {
+      font-size: 16px;
+  }
+  
+  h1 {
     padding-top: 100px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 8vw;
-    letter-spacing: 9vw;
-    transition: all 0.4s ease-in-out;
-    margin: 0;
-    padding: 0;
-    line-height: 1.45em;
-
-}
-h3 {
-    display: inline-block;
+    letter-spacing: 8vw;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  h1::after{
     position: absolute;
-    color: #FFFFFF;
-    font-family: "Roboto Mono";
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 39px;
+    content: "_";
     background-color: black;
-    padding: 4vh 4vw;
-    letter-spacing: 1em;
-    left: -150px;
-    margin-top: 95px;
-    box-shadow: 20px 12px 53px 0 rgba(0,0,0,0.3);
-    transition: 0.4s all ease-in-out;
-    z-index: 3;
+    height:0;
+    opacity: 0;
+    animation: opacity-flik 1s infinite ease;
+  }
+  
+  hr, .h2_info{
+    display: inline-block;
+  }
+  
+  main section {
+    position: relative;
+  }
+  
+  main .about-me {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .about-me img {
+      position: absolute;
+      left: 14vw;
+      z-index: -1;
+      top: 5em;
+      height: 20em;
+      width: 20em;
+  
+  }
+  main div {
+      margin-top: 36px;
+      width: 38vw;
+      margin-right: 17vw;
+      margin-left: auto;
+  }
+  
+  main div p {
+    padding: 50px 100px;
+    font-size: 2vw;
+    font-size: 16px;
+    line-height: 1.35em;
+    box-shadow: -20px 32px 124px 0 rgba(0,0,0,0.1);
+    z-index: 1;
+    background-color: #fff;
+    margin-top: 2em;
+  }
+  
+  .h2_info {
+    font-weight: 100;
+    font-size: 4vw;
     text-transform: uppercase;
-}
-.portfolio-item .layer-1 {
-  transform: translateX(-40px);
-}
-.portfolio-item .layer-2 {
-  transform: translateX(70px);
-}
-.layer-3 {
-  transform: scale(1.1);
-}
-.layer-4 {
-  transform: scale(1.1);
-}
-
-@media (min-width: 1270px) {
-    article{
-        padding: 0 5vw;
-    }
-}
-
-@media (min-width: 1400px) {
-    .other-projects {
-        line-height: 21vh;
-    }
-    .projects {
-        padding: 5em 15.375em;
-    }
-    .portfolio-img {
-        max-width:60%;
-    }
-    .portfolio-item div {
-        width: 39vw;
-        margin-right: 29.5em;
-    }
-    .portfolio-item:nth-child(even) div {
-        margin-right: 58em;
+    letter-spacing: 3vw;
+    margin-top: 55px;
+  }
+  h2 {
+      font-size: 60px;
+      line-height: 100px;
+      letter-spacing: 5.1vw;
+      margin-left: auto;
+      margin-left: 19vw;
+      text-transform: uppercase;
+      transition: 0.4s all ease-in-out;
+  }
+  
+  hr {
+    height: 3px;
+    border: none;
+    outline: none;
+    background: black;
+    width: 20%;
+    position: absolute;
+    top: 100px;
+  }
+  
+  .headline {
+    margin-top: 107px;
+    font-size: 60px;
+    line-height: 100px;
+    letter-spacing: 5.1vw;
+    margin-left: auto;
+    padding-right: 10vw;
+    margin-left: 1.6em;
+  }
+  
+  .other-projects {
+      margin-top: 2em;
+      font-size: 5vw;
+      letter-spacing: 5vw;
+      line-height: 9vh;
+  }
+  .other-projects::after{
+      content: initial;
+  }
+  
+  .projects {
+      padding: 0 10.375em;
+      margin-top: 2em;
+  }
+  .projects li {
+      position: relative;
+      max-width: 44.5vw;
+  }
+  
+  .projects li:nth-child(even){
+      margin-left: auto;
+  }
+  .projects li:last-child {
+      padding-left: 4em;
+  }
+  .projects li a {
+      display: block;
+      width: 11em;
+      margin: auto;
+      bottom: 3em;
+  }
+  .projects h3 {
+      color: black;
+      font-family: "Roboto Mono";
+      font-size: 1.875em;
+      font-weight: bold;
+      line-height: 39px;
+      background-color: transparent;
+      margin-top: 95px;
+      box-shadow: none;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      left: initial;
+      right: -3em;
+      bottom: 7.625em;
+  }
+  .projects img {
+      width: 100%;
+      box-shadow: -5px 12px 50px 0 rgba(0,0,0,0.2);
+  }
+  article img {
+    margin-top: 144px;
+    position: absolute;
+    height: 622px;
+    width: 612px;
+    background-color: #4A90E2;
+    box-shadow: -10px 2px 54px 0 rgba(0,0,0,0.2);
+    z-index: -1;
+  }
+  
+  .code {
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 120px;
+    letter-spacing: 70px;
+    right: 0;
+    top: 4em;
+    color: rgba(0,0,0, 10%);
+    text-transform: uppercase;
+    z-index: -3;
+  }
+  .adventure{
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 120px;
+    letter-spacing: 70px;
+    left: 0;
+    top: 1.5em;
+    color: rgba(0,0,0, 10%);
+    text-transform: uppercase;
+    z-index: -3
+  }
+  
+  .filter {
+    position: relative;
+    padding-top: 12vh;
+  }
+  
+  .filter h1 {
+    font-size: 2vw;
+    letter-spacing: 3vw;
+    display: inline-block;
+  }
+  
+  .filter h1::after {
+    content: "";
+  }
+  .headline::after{
+    content:"";
+  }
+  
+  .filter form {
+    display: inline-block;
+    margin-left: auto;
+    position: absolute;
+    width: 57vw;
+    margin-top: 70px;
+  }
+  
+  .filter label {
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 56px;
+    letter-spacing: 2vw;
+    border: 2px solid black;
+    padding: 0 33px;
+    padding-right: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+  }
+  label:hover {
+    color: white;
+    background:black;
+  }
+  
+  input[type=checkbox] {
+    position: absolute;
+    left:-9999999px;
+    opacity: 0;
+  }
+  input[type=checkbox]:focus+label {
+    opacity: 1;
+    color: white;
+    background: black;
+  }
+  
+  input[type=checkbox]:checked + label {
+    opacity: 1;
+    color: white;
+    background: black;
+  }
+  input[type=checkbox]:checked:focus + label{
+    color: black;
+    background-color: #fff;
+    border: 2px solid black;
+  }
+  
+  input[type=checkbox]:notchecked + label {
+    opacity: 1;
+    color: white;
+    background: black;
+  }
+  
+  .filter label:nth-child(n+3) {
+    margin-top: 26px;
+  }
+  
+  label.reset {
+    border: none;
+  }
+  
+  .portfolio-item {
+      position: relative;
+      padding-top: 350px;
+  }
+  .portfolio-item:first-of-type {
+      padding-top:250px;
+  }
+  
+  .portfolio-img {
+    position: absolute;
+    z-index: -1;
+    height: auto;
+    width: 80%;
+    object-fit: cover;
+    box-shadow: 0 12px 50px 0 rgba(0,0,0,0.2);
+    transition: 0.4s all ease-in-out;
+  }
+  .portfolio-item:nth-child(even) .portfolio-img{
+    right: 0;
+  }
+  .portfolio-item .headline {
+    margin-top: 0;
+    padding: 0;
+  }
+  .portfolio-item p{
+      font-family: 'Roboto', sans-serif;
+      color: #000000;
+      font-size: 18px;
+      font-weight: 100;
+      position: relative;
+      transition: 0.4s all ease-in-out;
+      padding-left: 23vw;
+      padding-bottom: 75px;
+      padding-top: 75px;
+      line-height: 1.7;
+  }
+  
+  .portfolio-item div {
+    position: relative;
+    width: 56vw;
+    margin-top: 16em;
+  }
+  
+  
+  .blue-filter {
+    -webkit-filter: brightness(2) hue-rotate(-68deg);
+    filter: brightness(2) hue-rotate(-68deg);
+  }
+  a {
+    color: white;
+    font-family: "Roboto Mono";
+    border: none;
+    text-transform: uppercase;
+    background: black;
+    letter-spacing: 1.4em;
+    padding: 2em;
+    display: table;
+    margin: auto;
+    padding-right: 10px;
+    margin-top: -20px;
+    transition: background 0.2s ease-in-out;
+    border: 2px solid transparent;
+    z-index: 4;
+    position: relative;
+  }
+  
+  a:hover,
+  a:focus {
+    color: black;
+    background:white;
+    border: 2px solid black;
+  }
+  footer {
+    padding-bottom: 100px;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  footer a {
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 2em;
+    padding: 1em;
+    letter-spacing: 1em;
+    transition: all 0.4s ease-in-out;
+    border: 2px solid transparent;
+    color: inherit;
+    font-weight: bold;
+    margin-top: 2em;
+    text-transform: uppercase;
+    color: white;
+    background: black;
+  
+  }
+  
+  footer a:focus,
+  footer a:hover {
+    color: black;
+    background: white;
+    border: 2px solid black;
+    transform: perspective( 600px ) rotateY( 45deg );
+  }
+  
+  footer a:first-of-type {
+    margin-left: 0;
+  }
+  
+  footer h1::after {
+      content: initial;
+  }
+  footer h1 {
+      font-size: 7vw;
+  }
+  
+  footer h2 {
+      padding-top: 100px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 8vw;
+      letter-spacing: 9vw;
+      transition: all 0.4s ease-in-out;
+      margin: 0;
+      padding: 0;
+      line-height: 1.45em;
+  
+  }
+  h3 {
+      display: inline-block;
+      position: absolute;
+      color: #FFFFFF;
+      font-family: "Roboto Mono";
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 39px;
+      background-color: black;
+      padding: 4vh 4vw;
+      letter-spacing: 1em;
+      left: -150px;
+      margin-top: 95px;
+      box-shadow: 20px 12px 53px 0 rgba(0,0,0,0.3);
+      transition: 0.4s all ease-in-out;
+      z-index: 3;
+      text-transform: uppercase;
+  }
+  .portfolio-item .layer-1 {
+    transform: translateX(-40px);
+  }
+  .portfolio-item .layer-2 {
+    transform: translateX(70px);
+  }
+  .layer-3 {
+    transform: scale(1.1);
+  }
+  .layer-4 {
+    transform: scale(1.1);
+  }
+  
+  @media (min-width: 1400px) {
+      .other-projects {
+          line-height: 21vh;
       }
-    .about-me main div p {
-        margin-top: 3em;
-    }
-    .about-me div {
-        margin-top: 36px;
-        width: 25vw;
-        margin-right: 32em;
-        margin-left: auto;
-    }
-    .about-me img {
-        height: 30em;
-        top: 15em;
-        width: 30em;
-        left: 24vw;
-        top: 12vh;
-    }
-    .portfolio-item:first-of-type {
-        padding-top: 450px;
-    }
-    .coffee {
-        padding-top: 150px;
-    }
-    footer {
-        padding-bottom: 200px
-    }
-}
+      .projects {
+          padding: 5em 15.375em;
+      }
+      .portfolio-img {
+          max-width:60%;
+      }
+  
+      .about-me main div p {
+          margin-top: 3em;
+      }
+      .about-me div {
+          margin-top: 36px;
+          margin-right: 14vw;
+          margin-left: auto;
+      }
+      .about-me img {
+          height: 30em;
+          top: 15em;
+          width: 30em;
+          left: 24vw;
+          top: 12vh;
+      }
+      .portfolio-item:first-of-type {
+          padding-top: 450px;
+      }
+      .coffee {
+          padding-top: 150px;
+      }
+      footer {
+          padding-bottom: 200px;
+      }
+      .about-me div {
+          margin-right: 20vw;
+      }
+  }
+  
+  @media (min-width: 2000px) {
+      h3 {
+          font-size:1.4em;
+      }
+      .portfolio-item div {
+          width: 38vw;
+          margin-right: 29.5em;
+      }
+  }
+  
+  
+  @media (max-width: 1270px) {
+      h3 {
+          font-size:1.4em;
+      }
+  }
+  
+  @media (min-width: 1270px) {
+      article{
+          padding: 0 5vw;
+      }
+  }
+  
+  
+  @media (max-width: 1000px) {
+      .portfolio-item div{
+          padding-top: 100px;
+      }
+      main div {
+          padding: initial;
+          width: initial;
+          margin-right: initial;
+      }
+      .portfolio-item {
+          padding-top: 100px;
+      }
+      .projects {
+          padding: initial;
+      }
+      footer a {
+          margin: initial;
+          font-size: 1.2em;
+          margin-left: 20px;
+          margin-top: 2em;
+      }
+      footer a:first-of-type {
+          margin: 0;
+      }
+      main article:first-of-type h1{
+          font-size: 13vw;
+      }
+      .projects li {
+          max-width: initial;
+      }
+      .about-me img {
+          position: initial;
+          top: 0;
+          left: 0;
+          width : 100%;
+      }
+      .headline {
+          margin: 0;
+      }
+      main .about-me {
+          padding-top: 2em;
+      }
+      .portfolio-img {
+          margin-top: 2em;
+      }
+      .projects img {
+          margin: 2em 0;
+      }
+      .projects h3 {
+          display: none;
+          position: initial;
+      }
+      .projects li a {
+          width: initial;
+          bottom: 80px;
+          margin: initial;
+          display: inline-block;
+      }
+      .projects li:last-child{
+          padding: 0;
+      }
+      .other-projects {
+          margin-top: 0;
+          padding: 0;
+      }
+      ul {
+          padding-bottom: 100px;
+      }
+      .projects {
+          text-align: center;
+      }
+      main article:first-of-type h1.coffee {
+           font-size: 7vw;
+      }
+  }
+  
+  @media (max-width: 769px) {
+      article img {
+          margin-top: 50px;
+      }
+      .headline {
+          font-size: 2em;
+          line-height: 2em;
+      }
+      main div p {
+          padding: 2em;
+      }
+      article {
+          padding:0 30px;
+      }
+      .portfolio-item div {
+          width: initial;
+          margin: initial;
+          max-width: initial;
+          padding: initial;
+      }
+      .portfolio-item h2 {
+          font-size: 2em;
+          line-height: 2em;
+          padding-right: 0;
+      }
+      h3 {
+          padding: 20px;
+          font-size: 1em;
+          position: initial;
+          left: initial;
+          margin:20px 0;
+      }
+      a {
+          font-size: 16px;
+          padding: 1em;
+          padding-right: 0;
+      }
+      footer a{
+          font-size: 1em;
+          margin-left: 0;
+          margin-top: 20px;
+      }
+      footer a:first-of-type {
+          margin-top: 20px;
+      }
+      ul {
+          margin: 0 2em;
+      }
+      .portfolio-img {
+          position: initial;
+          z-index: -1;
+          height: auto;
+          width: 100%;
+          top: initial;
+          object-fit: cover;
+          box-shadow: 0 12px 50px 0 rgba(0,0,0,0.2);
+          transition: 0.4s all ease-in-out;
+      }
+      .portfolio-item p {
+          padding: 2em;
+          margin: 0;
+      }
+      .portfolio-item:first-of-type {
+          padding: 50px 0;
+      }
+      h2 {
+          margin-left: 0;
+      }
+      article:first-child h2{
+          margin-left: 20vw;
+      }
+      ul {
+          margin: 0 2em;
+      }
+  }
 
+  @media (min-width: 769px) {
+    article:first-of-type {
+        padding: 0 15vw;
+    }
+  }
+  
+  @media (min-width: 450px) {
+      ul {
+          padding-bottom: 0;
+      }
 
-@media (max-width: 1270px) {
-    h3 {
-        font-size:1.4em;
+  }
+  
+  @media(max-width: 450px) {
+      main .about-me {
+          padding: 0;
+      }
+      .portfolio-item {
+          padding: 0;
+      }
+      article:first-of-type {
+        padding: 0 2em;
     }
-}
-
-@media (max-width: 1000px) {
-    .portfolio-item div{
-        padding-top: 100px;
-    }
-    main div {
-        padding: initial;
-        width: initial;
-    }
-    .portfolio-item {
-        padding-top: 100px;
-    }
-    .projects {
-        padding: initial;
-    }
-    footer a {
-        margin: initial;
-        font-size: 1.2em;
-        margin-left: 20px;
-        margin-top: 2em;
-    }
-    footer a:first-of-type {
-        margin: 0;
-    }
-    main article:first-of-type h1{
-        font-size: 13vw;
-    }
-    .projects li {
-        max-width: initial;
-    }
-    .about-me img {
-        position: initial;
-        top: 0;
-        left: 0;
-        width : 100%;
-    }
-    .headline {
-        margin: 0;
-    }
-    main .about-me {
-        padding-top: 2em;
-    }
-    .portfolio-img {
-        margin-top: 2em;
-    }
-    .projects img {
-        margin: 2em 0;
-    }
-    .projects h3 {
-        display: none;
-        position: initial;
-    }
-    .projects li a {
-        width: initial;
-        bottom: 80px;
-        margin: initial;
-        display: inline-block;
-    }
-    .projects li:last-child{
-        padding: 0;
-    }
-    .other-projects {
-        margin-top: 0;
-        padding: 0;
-    }
-    ul {
-        padding-bottom:250px;
-    }
-    .projects {
-        text-align: center;
-    }
-    main article:first-of-type h1.coffee {
-         font-size: 7vw;
-    }
-}
-
-@media (max-width: 769px) {
-    .headline {
-        font-size: 2em;
-        line-height: 2em;
-    }
-    main div p {
-        padding: 2em;
-    }
-    article {
-        padding:0 30px;
-    }
-    .portfolio-item div {
-        width: initial;
-        margin: initial;
-        max-width: initial;
-        padding: initial;
-    }
-    .portfolio-item h2 {
-        font-size: 2em;
-        line-height: 2em;
-        padding-right: 0;
-    }
-    h3 {
-        padding: 20px;
-        font-size: 1em;
-        position: initial;
-        left: initial;
-        margin:20px 0;
-    }
-    a {
-        font-size: 16px;
-        padding: 1em;
-        padding-right: 0;
-    }
-    footer a{
-        font-size: 1em;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-    footer a:first-of-type {
-        margin-top: 20px;
-    }
-    ul {
-        margin: 0 2em;
-    }
-    .portfolio-img {
-        position: initial;
-        z-index: -1;
-        height: auto;
-        width: 100%;
-        top: initial;
-        object-fit: cover;
-        box-shadow: 0 12px 50px 0 rgba(0,0,0,0.2);
-        transition: 0.4s all ease-in-out;
-    }
-    .portfolio-item p {
-        padding: 2em;
-        margin: 0;
-    }
-}
-
-
-@keyframes opacity-flik {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+  }
+  
+  @keyframes opacity-flik {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  
