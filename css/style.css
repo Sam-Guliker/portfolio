@@ -24,6 +24,7 @@ article {
 article:first-of-type {
   padding: 0 15vw;
 }
+
 article:first-of-type h1 {
   line-height: 1.4;
 }
@@ -66,15 +67,17 @@ main .about-me {
 }
 
 .about-me img {
-  top: 17em;
   position: absolute;
-  left: 6em;
+  left: 14vw;
   z-index: -1;
+  top: 5em;
+  height: 20em;
+  width: 20em;
 }
 main div {
   margin-top: 36px;
-  width: 33vw;
-  margin-right: 20em;
+  width: 38vw;
+  margin-right: 17vw;
   margin-left: auto;
 }
 
@@ -166,7 +169,6 @@ hr {
   background-color: transparent;
   margin-top: 95px;
   box-shadow: none;
-  transition: 0.4s all ease-in-out;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -178,7 +180,6 @@ hr {
   width: 100%;
   box-shadow: -5px 12px 50px 0 rgba(0, 0, 0, 0.2);
 }
-
 article img {
   margin-top: 144px;
   position: absolute;
@@ -448,12 +449,6 @@ h3 {
   transform: scale(1.1);
 }
 
-@media (min-width: 1270px) {
-  article {
-    padding: 0 5vw;
-  }
-}
-
 @media (min-width: 1400px) {
   .other-projects {
     line-height: 21vh;
@@ -461,11 +456,61 @@ h3 {
   .projects {
     padding: 5em 15.375em;
   }
+  .portfolio-img {
+    max-width: 60%;
+  }
+
+  .about-me main div p {
+    margin-top: 3em;
+  }
+  .about-me div {
+    margin-top: 36px;
+    margin-right: 10vw;
+    margin-left: auto;
+  }
+  .about-me img {
+    height: 30em;
+    top: 15em;
+    width: 30em;
+    left: 24vw;
+    top: 12vh;
+  }
+  .portfolio-item:first-of-type {
+    padding-top: 450px;
+  }
+  .coffee {
+    padding-top: 150px;
+  }
+  footer {
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-width: 2000px) {
+  h3 {
+    font-size: 1.4em;
+  }
+  .portfolio-item div {
+    width: 33vw;
+    margin-right: 37em;
+  }
+  .about-me div {
+    padding-right: 15vw;
+  }
+  .portfolio-item p {
+    padding-left: 14vw;
+  }
 }
 
 @media (max-width: 1270px) {
   h3 {
     font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1270px) {
+  article {
+    padding: 0 5vw;
   }
 }
 
@@ -476,6 +521,7 @@ h3 {
   main div {
     padding: initial;
     width: initial;
+    margin-right: initial;
   }
   .portfolio-item {
     padding-top: 100px;
@@ -534,7 +580,7 @@ h3 {
     padding: 0;
   }
   ul {
-    padding-bottom: 250px;
+    padding-bottom: 100px;
   }
   .projects {
     text-align: center;
@@ -545,6 +591,9 @@ h3 {
 }
 
 @media (max-width: 769px) {
+  article img {
+    margin-top: 50px;
+  }
   .headline {
     font-size: 2em;
     line-height: 2em;
@@ -602,6 +651,42 @@ h3 {
   .portfolio-item p {
     padding: 2em;
     margin: 0;
+  }
+  .portfolio-item:first-of-type {
+    padding: 50px 0;
+  }
+  h2 {
+    margin-left: 0;
+  }
+  article:first-child h2 {
+    margin-left: 20vw;
+  }
+  ul {
+    margin: 0 2em;
+  }
+}
+
+@media (min-width: 769px) {
+  article:first-of-type {
+    padding: 0 15vw;
+  }
+}
+
+@media (min-width: 450px) {
+  ul {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  main .about-me {
+    padding: 0;
+  }
+  .portfolio-item {
+    padding: 0;
+  }
+  article:first-of-type {
+    padding: 0 2em;
   }
 }
 
