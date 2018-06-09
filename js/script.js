@@ -32,7 +32,7 @@
       });
 
       github.addEventListener("click", function() {
-        window.open("https://github.com/Sam-Guliker/", "_blank");
+        window.open("https://github.com/Sam-Guliker", "_blank");
       });
     }
   };

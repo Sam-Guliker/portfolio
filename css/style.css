@@ -45,7 +45,7 @@ h1 {
 h1::after {
   position: absolute;
   content: "_";
-  background-color: black;
+  background-color: #2e2e2e;
   height: 0;
   opacity: 0;
   animation: opacity-flik 1s infinite ease;
@@ -113,7 +113,7 @@ hr {
   height: 3px;
   border: none;
   outline: none;
-  background: black;
+  background: #2e2e2e;
   width: 20%;
   position: absolute;
   top: 100px;
@@ -131,6 +131,11 @@ hr {
 
 .portfolio-item h2 {
   margin-bottom: 1em;
+}
+.portfolio-item h2.right-side {
+  text-align: right;
+  margin-right: 34vw;
+  margin-left: initial;
 }
 .other-projects {
   margin-top: 2em;
@@ -164,7 +169,7 @@ hr {
   bottom: 3em;
 }
 .projects h3 {
-  color: black;
+  color: #2e2e2e;
   font-family: "Roboto Mono";
   font-size: 1.875em;
   font-weight: bold;
@@ -251,7 +256,7 @@ article img {
   font-size: 1em;
   line-height: 56px;
   letter-spacing: 2vw;
-  border: 2px solid black;
+  border: 2px solid #2e2e2e;
   padding: 0 33px;
   padding-right: 5px;
   display: inline-block;
@@ -260,7 +265,7 @@ article img {
 }
 label:hover {
   color: white;
-  background: black;
+  background: #2e2e2e;
 }
 
 input[type="checkbox"] {
@@ -271,24 +276,24 @@ input[type="checkbox"] {
 input[type="checkbox"]:focus + label {
   opacity: 1;
   color: white;
-  background: black;
+  background: #2e2e2e;
 }
 
 input[type="checkbox"]:checked + label {
   opacity: 1;
   color: white;
-  background: black;
+  background: #2e2e2e;
 }
 input[type="checkbox"]:checked:focus + label {
-  color: black;
+  color: #2e2e2e;
   background-color: #fff;
-  border: 2px solid black;
+  border: 2px solid #2e2e2e;
 }
 
 input[type="checkbox"]:notchecked + label {
   opacity: 1;
   color: white;
-  background: black;
+  background: #2e2e2e;
 }
 
 .filter label:nth-child(n + 3) {
@@ -358,7 +363,7 @@ a {
   font-family: "Roboto Mono";
   border: none;
   text-transform: uppercase;
-  background: black;
+  background: #2e2e2e;
   letter-spacing: 1.4em;
   padding: 2em;
   display: table;
@@ -373,9 +378,9 @@ a {
 
 a:hover,
 a:focus {
-  color: black;
+  color: #2e2e2e;
   background: white;
-  border: 2px solid black;
+  border: 2px solid #2e2e2e;
 }
 footer {
   padding-bottom: 100px;
@@ -521,7 +526,7 @@ h3 {
   font-size: 1.4em;
   font-weight: bold;
   line-height: 39px;
-  background-color: black;
+  background-color: #2e2e2e;
   padding: 5vh 3vw;
   letter-spacing: 1em;
   left: -150px;
