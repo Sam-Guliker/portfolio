@@ -129,6 +129,9 @@ hr {
   margin-left: 1.6em;
 }
 
+.portfolio-item h2 {
+  margin-bottom: 1em;
+}
 .other-projects {
   margin-top: 2em;
   font-size: 5vw;
@@ -152,7 +155,7 @@ hr {
   margin-left: auto;
 }
 .projects li:last-child {
-  padding-left: 4em;
+  margin-left: 7em;
 }
 .projects li a {
   display: block;
@@ -337,9 +340,16 @@ label.reset {
   margin-top: 16em;
 }
 
-.blue-filter {
+.blue-filter-one {
   -webkit-filter: brightness(2) hue-rotate(-68deg);
   filter: brightness(2) hue-rotate(-68deg);
+}
+.blue-filter-two {
+  -webkit-filter: brightness(1) hue-rotate(10deg);
+  filter: brightness(1) hue-rotate(10deg);
+}
+.audio {
+  left: -240px;
 }
 a {
   color: white;
@@ -449,6 +459,14 @@ h3 {
   transform: scale(1.1);
 }
 
+.projects li.tour {
+  margin-right: 7em;
+  max-width: 17.5em;
+}
+.tour h3 {
+  left: 6em;
+}
+
 @media (min-width: 1400px) {
   .other-projects {
     line-height: 21vh;
@@ -472,7 +490,7 @@ h3 {
     height: 30em;
     top: 15em;
     width: 30em;
-    left: 24vw;
+    left: 20vw;
     top: 12vh;
   }
   .portfolio-item:first-of-type {
