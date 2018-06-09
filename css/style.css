@@ -201,6 +201,7 @@ article img {
   letter-spacing: 70px;
   right: 0;
   top: 4em;
+  color: rgb(240, 240, 240);
   color: rgba(0, 0, 0, 10%);
   text-transform: uppercase;
   z-index: -3;
@@ -213,6 +214,7 @@ article img {
   letter-spacing: 70px;
   left: 0;
   top: 1.5em;
+  color: rgb(240, 240, 240);
   color: rgba(0, 0, 0, 10%);
   text-transform: uppercase;
   z-index: -3;
@@ -382,32 +384,115 @@ a {
   text-decoration: none;
 }
 
-footer a {
-  font-size: 30px;
-  display: inline-block;
-  margin-left: 2em;
-  padding: 1em;
-  letter-spacing: 1em;
-  transition: all 0.4s ease-in-out;
-  border: 2px solid transparent;
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: 1.2em;
   color: inherit;
-  font-weight: bold;
-  margin-top: 2em;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin-top: 4em;
   text-transform: uppercase;
-  color: white;
-  background: black;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-footer a:focus,
-footer a:hover {
-  color: black;
-  background: white;
-  border: 2px solid black;
-  transform: perspective(600px) rotateY(45deg);
+.btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn1 {
+  background: #2e2e2e;
+  color: #fff;
+  padding: 2em 3em;
+  line-height: 24px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.btn1a {
+  margin-right: 2em;
 }
 
-footer a:first-of-type {
-  margin-left: 0;
+.btn1:focus {
+  border: 3px solid pink;
+}
+
+.btn1 a {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-transition: all 0.3s;
+  -moz-backface-visibility: hidden;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  color: #fff;
+  border: initial;
+  text-transform: uppercase;
+  background: initial;
+  letter-spacing: 1.4em;
+  padding: initial;
+  margin: initial;
+  padding: initial;
+  margin: initial;
+  border: initial;
+  z-index: initial;
+  position: initial;
+  padding-right: Ypx;
+  vertical-align: middle;
+}
+
+.btn1:before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 2.5;
+  font-size: 180%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn1:active:before {
+  color: #703b87;
+}
+
+/* Button 5a */
+.btn1a:hover a {
+  -webkit-transform: translateY(310%);
+  -moz-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
+}
+
+.btn1a:before {
+  left: 0;
+  top: -100%;
+}
+
+.btn1a:hover:before {
+  top: 6px;
+}
+.email:before {
+  content: url(../images/email.svg);
+  transform: scale(0.4);
+}
+.github:before {
+  content: url(../images/github.svg);
+  transform: scale(0.4);
 }
 
 footer h1::after {
@@ -433,11 +518,11 @@ h3 {
   position: absolute;
   color: #ffffff;
   font-family: "Roboto Mono";
-  font-size: 30px;
+  font-size: 1.4em;
   font-weight: bold;
   line-height: 39px;
   background-color: black;
-  padding: 4vh 4vw;
+  padding: 5vh 3vw;
   letter-spacing: 1em;
   left: -150px;
   margin-top: 95px;
