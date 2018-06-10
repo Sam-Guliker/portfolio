@@ -1,42 +1,47 @@
 (function() {
   var app = {
-    animation: function() {
-      const img = document.querySelector(".portfolio-img");
-      const button = document.querySelector(".portfolio-item a");
-      const project = document.querySelector(".portfolio-item p");
-      const h2 = document.querySelector(".portfolio-item h2");
-      const h3 = document.querySelector("h3");
-      console.log(h2);
+      animation: function(li) {
+        const tl = new TimelineLite();
 
-      button.addEventListener("mouseover", function() {
-        img.classList.add("layer-3");
-        h2.classList.add("layer-1");
-        project.classList.add("layer-2");
-        h3.classList.add("layer-4");
-      });
+        const img = li.querySelector(".portfolio-img");
+        const button = li.querySelector(".portfolio-item a");
+        const project = li.querySelector(".portfolio-item p");
+        const h2 = li.querySelector(".portfolio-item h2");
+        const h3 = li.querySelector("h3");
 
-      button.addEventListener("mouseout", function() {
-        img.classList.remove("layer-3");
-        h2.classList.remove("layer-1");
-        project.classList.remove("layer-2");
-        h3.classList.remove("layer-4");
-      });
+        button.addEventListener("mouseover", function() {
+          tl.to(h2, 0.4, { ease: Bounce.easeOut, x: -100 }, "+=0");
+          tl.to(img, 0.4, { ease: Bounce.easeOut, scale: 1.4 }, "+=0.1");
+          tl.to(project, 0.4, { ease: Bounce.easeOut, x: -170 }, "+=0.1");
+          tl.to(h3, 0.4, { ease: Bounce.easeOut, scale: 1.4 }, "+=0.1");
+        });
+
+        button.addEventListener("mouseout", function() {
+          tl.to(h2, 0.4, { ease: Bounce.easeOut, x: 0 }, "+=0.1");
+          tl.to(img, 0.4, { ease: Bounce.easeOut, scale: 1 }, "+=0.1");
+          tl.to(project, 0.4, { ease: Bounce.easeOut, x: 0 }, "+=0.1");
+          tl.to(h3, 0.5, { ease: Bounce.easeOut, scale: 1 }, "+=0.1");
+        });
+      },
+
+      footerHandler: function() {
+        const email = document.querySelector(".email");
+        const github = document.querySelector(".github");
+
+        email.addEventListener("click", function() {
+          window.open("mailto:samguliker@hotmail.com");
+        });
+
+        github.addEventListener("click", function() {
+          window.open("https://github.com/Sam-Guliker", "_blank");
+        });
+      }
     },
+    lis = document.querySelectorAll(".portfolio-item");
 
-    footerHandler: function() {
-      const email = document.querySelector(".email");
-      const github = document.querySelector(".github");
+  lis.forEach(function(li) {
+    app.animation(li);
+  });
 
-      email.addEventListener("click", function() {
-        window.open("mailto:samguliker@hotmail.com");
-      });
-
-      github.addEventListener("click", function() {
-        window.open("https://github.com/Sam-Guliker", "_blank");
-      });
-    }
-  };
-
-  app.animation();
   app.footerHandler();
 })();
