@@ -41,7 +41,7 @@
               y: -80,
               x: -10
             },
-            "-=0.1"
+            "-=0.2"
           );
         });
 
@@ -56,9 +56,9 @@
           );
           tl.to(
             h2,
-            0.8,
+            0.6,
             {
-              ease: Power1.easeInOut,
+              ease: Power2.easeInOut,
               x: 0,
               y: 0
             },
