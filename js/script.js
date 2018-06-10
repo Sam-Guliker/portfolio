@@ -10,17 +10,47 @@
         const h3 = li.querySelector("h3");
 
         button.addEventListener("mouseover", function() {
-          tl.to(h2, 0.4, { ease: Bounce.easeOut, x: -100 }, "+=0");
-          tl.to(img, 0.4, { ease: Bounce.easeOut, scale: 1.4 }, "+=0.1");
-          tl.to(project, 0.4, { ease: Bounce.easeOut, x: -170 }, "+=0.1");
-          tl.to(h3, 0.4, { ease: Bounce.easeOut, scale: 1.4 }, "+=0.1");
+          tl.to(
+            h2,
+            0.7,
+            { ease: Bounce.easeOut, x: -100, rotation: -90, y: 200 },
+            "+=0.1"
+          );
+          tl.to(
+            img,
+            0.7,
+            { ease: Power2.easeOut, scale: 1.2, rotation: 45 },
+            "+=0.1"
+          );
+          tl.to(project, 0.7, { ease: Power2.easeOut, x: -50 }, "+=0.1");
+          tl.to(
+            h3,
+            0.7,
+            { ease: Power2.easeOut, scale: 1.2, rotation: -30 },
+            "+=0.1"
+          );
         });
 
         button.addEventListener("mouseout", function() {
-          tl.to(h2, 0.4, { ease: Bounce.easeOut, x: 0 }, "+=0.1");
-          tl.to(img, 0.4, { ease: Bounce.easeOut, scale: 1 }, "+=0.1");
+          tl.to(
+            h2,
+            0.4,
+            { ease: Bounce.easeOut, x: 0, rotation: 0, y: 0 },
+            "+=0.1"
+          );
+          tl.to(
+            img,
+            0.4,
+            { ease: Bounce.easeOut, scale: 1, rotation: 0 },
+            "+=0.1"
+          );
           tl.to(project, 0.4, { ease: Bounce.easeOut, x: 0 }, "+=0.1");
-          tl.to(h3, 0.5, { ease: Bounce.easeOut, scale: 1 }, "+=0.1");
+          tl.to(
+            h3,
+            0.5,
+            { ease: Bounce.easeOut, scale: 1, rotation: 0 },
+            "+=0.1"
+          );
         });
       },
 
