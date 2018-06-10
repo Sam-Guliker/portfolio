@@ -12,18 +12,23 @@
         button.addEventListener("mouseover", function() {
           tl.to(
             project,
-            0.4,
-            { ease: Power3.easeOut, x: -100, y: -100 },
+            0.1,
+            { ease: Back.easeOut.config(1.7), x: 20, y: -140 },
             "-=0.1"
           );
-          tl.to(h3, 1, { ease: Power3.easeOut, x: -120, y: -120 }, "-=0.1");
+          tl.to(
+            h3,
+            0.3,
+            { ease: Back.easeOut.config(1.7), x: -100, y: -120 },
+            "-=0.1"
+          );
           tl.to(
             img,
-            0.4,
+            0.5,
             {
-              ease: Power3.easeOut,
+              ease: Back.easeOut.config(1.7),
               x: -100,
-              y: -10,
+              y: -100,
               scale: 1.1
             },
             "-=0.1"
@@ -32,28 +37,28 @@
             h2,
             0.6,
             {
-              ease: Power3.easeOut,
-              x: -20,
-              y: -20
+              ease: Back.easeOut.config(1.7),
+              y: -80,
+              x: -10
             },
             "-=0.1"
           );
         });
 
         button.addEventListener("mouseout", function() {
-          tl.to(project, 0.4, { ease: Power4.easeOut, x: 0, y: 0 }, "-=0.1");
-          tl.to(h3, 0.4, { ease: Power3.easeOut, x: 0, y: 0 }, "-=0.2");
+          tl.to(project, 0.4, { ease: Power4.easeInOut, x: 0, y: 0 }, "-=0.1");
+          tl.to(h3, 0.4, { ease: Power3.easeInOut, x: 0, y: 0 }, "-=0.2");
           tl.to(
             img,
-            0.4,
-            { ease: Power1.easeOut, x: 0, y: 0, scale: 1.1 },
+            0.6,
+            { ease: Power1.easeInOut, x: 0, y: 0, scale: 1.1 },
             "-=0.1"
           );
           tl.to(
             h2,
-            0.4,
+            0.8,
             {
-              ease: Power1.easeOut,
+              ease: Power1.easeInOut,
               x: 0,
               y: 0
             },
