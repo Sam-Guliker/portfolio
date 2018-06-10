@@ -532,6 +532,7 @@ h3 {
   left: -150px;
   margin-top: 95px;
   box-shadow: 20px 12px 53px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.4s all ease-in-out;
   z-index: 3;
   text-transform: uppercase;
 }

@@ -11,45 +11,53 @@
 
         button.addEventListener("mouseover", function() {
           tl.to(
-            h2,
-            0.7,
-            { ease: Bounce.easeOut, x: -100, rotation: -90, y: 200 },
-            "+=0.1"
+            project,
+            0.4,
+            { ease: Power3.easeOut, x: -100, y: -100 },
+            "-=0.1"
           );
+          tl.to(h3, 1, { ease: Power3.easeOut, x: -120, y: -120 }, "-=0.1");
           tl.to(
             img,
-            0.7,
-            { ease: Power2.easeOut, scale: 1.2, rotation: 45 },
-            "+=0.1"
+            0.4,
+            {
+              ease: Power3.easeOut,
+              x: -100,
+              y: -10,
+              scale: 1.1
+            },
+            "-=0.1"
           );
-          tl.to(project, 0.7, { ease: Power2.easeOut, x: -50 }, "+=0.1");
           tl.to(
-            h3,
-            0.7,
-            { ease: Power2.easeOut, scale: 1.2, rotation: -30 },
-            "+=0.1"
+            h2,
+            0.6,
+            {
+              ease: Power3.easeOut,
+              x: -20,
+              y: -20
+            },
+            "-=0.1"
           );
         });
 
         button.addEventListener("mouseout", function() {
-          tl.to(
-            h2,
-            0.4,
-            { ease: Bounce.easeOut, x: 0, rotation: 0, y: 0 },
-            "+=0.1"
-          );
+          tl.to(project, 0.4, { ease: Power4.easeOut, x: 0, y: 0 }, "-=0.1");
+          tl.to(h3, 0.4, { ease: Power3.easeOut, x: 0, y: 0 }, "-=0.2");
           tl.to(
             img,
             0.4,
-            { ease: Bounce.easeOut, scale: 1, rotation: 0 },
-            "+=0.1"
+            { ease: Power1.easeOut, x: 0, y: 0, scale: 1.1 },
+            "-=0.1"
           );
-          tl.to(project, 0.4, { ease: Bounce.easeOut, x: 0 }, "+=0.1");
           tl.to(
-            h3,
-            0.5,
-            { ease: Bounce.easeOut, scale: 1, rotation: 0 },
-            "+=0.1"
+            h2,
+            0.4,
+            {
+              ease: Power1.easeOut,
+              x: 0,
+              y: 0
+            },
+            "-=0.1"
           );
         });
       },
