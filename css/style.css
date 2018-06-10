@@ -656,7 +656,6 @@ h3 {
     position: initial;
     top: 0;
     left: 0;
-    width: 100%;
   }
   .headline {
     margin: 0;
@@ -699,6 +698,13 @@ h3 {
 }
 
 @media (max-width: 769px) {
+  .projects li:last-child {
+    margin: 0;
+  }
+  .projects li.tour {
+    margin-right: initial;
+    margin: auto;
+  }
   article img {
     margin-top: 50px;
   }
@@ -722,6 +728,11 @@ h3 {
     font-size: 2em;
     line-height: 2em;
     padding-right: 0;
+    margin-right: initial;
+  }
+  .portfolio-item h2.right-side {
+    margin-right: initial;
+    text-align: left;
   }
   h3 {
     padding: 20px;
@@ -738,9 +749,6 @@ h3 {
   footer a {
     font-size: 1em;
     margin-left: 0;
-    margin-top: 20px;
-  }
-  footer a:first-of-type {
     margin-top: 20px;
   }
   ul {
@@ -771,6 +779,9 @@ h3 {
   }
   ul {
     margin: 0 2em;
+  }
+  .btn1 {
+    font-size: 0.7em;
   }
 }
 
