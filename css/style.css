@@ -28,6 +28,13 @@ article:first-of-type {
 article:first-of-type h1 {
   line-height: 1.4;
 }
+.hover-dev {
+  position: absolute;
+  top: 62px;
+}
+.hover-dev span {
+  font-weight: bold;
+}
 
 p {
   font-size: 16px;
@@ -109,7 +116,7 @@ h2 {
 }
 
 hr {
-  height: 3px;
+  height: 2px;
   border: none;
   outline: none;
   background: #2e2e2e;

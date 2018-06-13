@@ -14,20 +14,26 @@
             h2,
             0.7,
             { ease: Bounce.easeOut, x: -100, rotation: -90, y: 200 },
-            "+=0.1"
+            "-=0.1"
           );
           tl.to(
             img,
             0.7,
             { ease: Power2.easeOut, scale: 1.2, rotation: 45 },
-            "+=0.1"
+            "-=0.2"
           );
-          tl.to(project, 0.7, { ease: Power2.easeOut, x: -50 }, "+=0.1");
+          tl.to(project, 0.7, { ease: Power4.easeIn, x: -100 }, "-=0.1");
           tl.to(
             h3,
             0.7,
             { ease: Power2.easeOut, scale: 1.2, rotation: -30 },
             "+=0.1"
+          );
+          tl.to(
+            h3,
+            0.7,
+            { ease: Power4.easeIn, y: 2000},
+            "-=0.1"
           );
         });
 
@@ -36,20 +42,20 @@
             h2,
             0.4,
             { ease: Bounce.easeOut, x: 0, rotation: 0, y: 0 },
-            "+=0.1"
+            "-=0.1"
           );
           tl.to(
             img,
             0.4,
             { ease: Bounce.easeOut, scale: 1, rotation: 0 },
-            "+=0.1"
+            "-=0.1"
           );
           tl.to(project, 0.4, { ease: Bounce.easeOut, x: 0 }, "+=0.1");
           tl.to(
             h3,
             0.5,
-            { ease: Bounce.easeOut, scale: 1, rotation: 0 },
-            "+=0.1"
+            { ease: Bounce.easeOut, scale: 1, rotation: 0, y:0 },
+            "-=0.1"
           );
         });
       },
